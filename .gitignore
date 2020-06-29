@@ -1,0 +1,5 @@
+/GameServer/.idea
+*.DS_Store
+/javaBase.iml
+/target/*
+/.idea/*
