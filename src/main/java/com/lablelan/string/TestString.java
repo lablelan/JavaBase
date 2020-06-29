@@ -34,7 +34,7 @@ public class TestString {
         long addI1 = getLocation(i);
         i = "20";
         long addI2 = getLocation(i);
-        // iAddr1和iAddr2不一致！
+        // addI1和addI2不一致！
         System.out.println("change String:" + "addI1: " + addI1 + " addI2: " + addI2);
     }
     public static void change(StringBuilder i) throws IllegalAccessException, NoSuchFieldException, InstantiationException {
