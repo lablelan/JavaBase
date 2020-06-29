@@ -53,10 +53,9 @@ public class TestString {
         System.out.println("main:" + "addrI1 = " + addrI1 + " addrI2 = " + addrI2 + " hashCode:" + i.hashCode());
         StringBuilder sb = new StringBuilder("10");
         long addrSB1 = getLocation(i);
-        System.out.println("main1 addrSB1:" + addrSB1 + "," + i.hashCode());
         change(sb);
         long addrSB2 = getLocation(i);
         // addrSB1 和 addrSB2 地址一样 并且sb确实被修改
-        System.out.println("main:" + "addrSB1 = " + addrSB1 + " addrSb2 = " + addrSB2 + " hashCode:" + sb.hashCode() + " string:" + sb.toString());
+        System.out.println("main:" + "addrSB1 = " + addrSB1 + " addrSb2 = " + addrSB2);
     }
 }
