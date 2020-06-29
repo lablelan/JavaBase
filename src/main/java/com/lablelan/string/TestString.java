@@ -52,9 +52,9 @@ public class TestString {
         // addrI1 和 addrI2 地址一样说明change内部操作对i并没有生效
         System.out.println("main:" + "addrI1 = " + addrI1 + " addrI2 = " + addrI2 + " hashCode:" + i.hashCode());
         StringBuilder sb = new StringBuilder("10");
-        long addrSB1 = getLocation(i);
+        long addrSB1 = getLocation(sb);
         change(sb);
-        long addrSB2 = getLocation(i);
+        long addrSB2 = getLocation(sb);
         // addrSB1 和 addrSB2 地址一样 并且sb确实被修改
         System.out.println("main:" + "addrSB1 = " + addrSB1 + " addrSb2 = " + addrSB2);
     }
